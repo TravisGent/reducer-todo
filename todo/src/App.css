@@ -10,3 +10,9 @@
   padding-top: 1%;
   font-size: 1.5rem;
 }
+
+.listItemCompleted {
+  padding-top: 1%;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
