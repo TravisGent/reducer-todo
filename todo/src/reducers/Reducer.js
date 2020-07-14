@@ -1,4 +1,4 @@
-export const toDoList = [
+export const initialState = [
   {
     item: 'Learn about reducers',
     completed: false,
@@ -6,15 +6,15 @@ export const toDoList = [
   }
 ];
 
-const addToDo = { 
-    type: "ADD_TODO" 
-}
-
 export const reducer = (state, action) => {
-  if(action.type === "ADD_TODO") {
-    return state;
-    /*return [{...state, }] */
+  if (action.type === "ADD_TODO") {
+    return [
+      ...initialState, 
+      {
+        item: action.payload,
+        completed: false,
+        id: new Date()
+      }
+    ]
   }
 }
-
-reducer(toDoList, addToDo);
