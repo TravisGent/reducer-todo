@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: 2rem;
+  color: white;
+}
+
+.listItem {
+  padding-top: 1%;
+  font-size: 1.5rem;
+}
+
+.listItemCompleted {
+  padding-top: 1%;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
